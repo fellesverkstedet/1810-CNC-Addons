@@ -1,16 +1,17 @@
 # 1810-CNC-Addons
-How to guide and parts for improving the small CNC milling machines at Fellesverkstedet
+*How to guide and parts for improving the small CNC milling machines at Fellesverkstedet*
 
-### Hoe to make jobs
+### How to make jobs
 
- - V-Carve pro works well. Make sure you use GRBL post processor when exporting.
- - Bark Beetle also works well. Files with auto setting fr the 1810 machines here: 
+ - V-Carve pro works well. Make sure you use the GRBL post processor when exporting.
+ - Bark Beetle also works well. Files with auto setting for the 1810 machines [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/Maintenance)
  - You can use almost any CAM software that can output plain g-code, like Fusion360 etc. Easel by Shapeoko is an online user friendly simple alternative.
 
-### How to control
+### How to control and send jobs
 
  - Universal g-code sender works well: https://winder.github.io/ugs_website/
  - Alternatively you can use any g-coder sender for GRBL
+ - We like to set up a macro button that homes the machine and sets the correct offsets after homing. Example in the repo [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/Macros)
  
 ### How to fixture material
 
@@ -18,8 +19,9 @@ How to guide and parts for improving the small CNC milling machines at Fellesver
 
 ### Tips n tricks
 
- - The machines are very precise, but very weak. For precision results you almost always need a fishing removing the last 0.05-0.1mm
- - Skim cuts can also work well somtimes (running the samme job  again)
+ - Max spindle RPM is 9200. Feedrates should be half of what you use with the same bit on a ShopBot *(max 18000RPM)*, and pass depths should be lots shallower.
+ - The machines are very precise, but very weak. For precision results you almost always need to set up a finishing pass removing the last 0.05-0.1mm
+ - Skim cuts can also work sometimes *(running the same job  again)*
 
 
 ### Axes
@@ -36,13 +38,20 @@ How to guide and parts for improving the small CNC milling machines at Fellesver
  - Use of a tachometer app or a real tachometer is recommended for lower RPM needs.
  
  
+### The add-ons
+
+ - We have developed 3D printed parts for adding homing sensors to the X,Y and Z axis. Files are in this repo [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/HomingExtensions)
+ - We have developed a 3D printable controller case with a transparent acrylic lid. Files in the repo [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/ControllerCase)
+ - An enclosure is also under development. Files [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/Enclosure)
+ 
  ### To do
  
   - Make more robust mount for Z homing switch *(can easily move upwards now and not trigger or give inconsistent triggering, screw triggering X limit switch can also shift)*
   - Add e-stop button
   - Finish enclosure, add handle and hinge
   - Tidy up wiring, shorten limit switch cable lengths
-  - Improve springloaded preload on acme thread nuts
+  - Add probing plate and wiring for bit length probing *(ala our shopbot setup)*
+  - Improve springloaded preload on acme thread nuts *(for increased stiffness)*
   - Adjust X and Y axes to be square
   - Adjust Z axis angle to be 90 deg to XY plane
   - Add dust collection solution?
