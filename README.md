@@ -1,5 +1,9 @@
 # 1810-CNC-Addons
-*How to guide and parts for improving the small CNC milling machines at Fellesverkstedet*
+*How to guide and parts the small CNC milling machines at Fellesverkstedet + parts we designed to improve the machines*
+
+### What
+
+ - Tiny precise milling machines with a 160mm x 80mm x 15mm work area. Slow and weak, but nice for engraving and 3D milling small projects.
 
 ### How to make jobs
 
