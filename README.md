@@ -11,7 +11,7 @@
 ### How to make jobs
 
  - V-Carve pro works well. Make sure you use the GRBL post processor when exporting.
- - Bark Beetle also works well. Files with auto setting for the 1810 machines [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/Maintenance)
+ - Bark Beetle also works well. Files with auto setting for the 1810 machines [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/Maintenance).
  - You can use almost any CAM software that can output plain g-code, like Fusion360 etc. Easel by Shapeoko is an online user friendly simple alternative.
 
 ### How to control and send jobs
@@ -29,7 +29,7 @@
 ### Tips
 
  - Max spindle RPM is 9200. Feedrates should be half of what you use with the same bit on a ShopBot *(max 18000RPM)*, and pass depths should be lots shallower.
- - The machines are very precise, but very weak. For precision results you almost always need to set up a finishing pass removing the last 0.05-0.1mm
+ - The machines are very precise, but very weak. For precision results you almost always need to set up a finishing pass removing the last 0.05-0.1mm.
  - Skim cuts can also work sometimes *(running the same job  again)*
 
 
@@ -49,7 +49,7 @@
  
 ### The add-ons
 
- - We have developed 3D printed parts for adding homing sensors to the X,Y and Z axis. Files are in this repo [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/HomingExtensions). We bouht [these](https://www.aliexpress.com/item/32842303693.html?spm=a2g0s.9042311.0.0.362a4c4dJqbJiP) homing sensors at Aliexpress.
+ - We have developed 3D printed parts for adding homing sensors to the X,Y and Z axis. Files are in this repo [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/HomingExtensions). We bought [these](https://www.aliexpress.com/item/32842303693.html?spm=a2g0s.9042311.0.0.362a4c4dJqbJiP) homing sensors at Aliexpress.
  - We have developed a 3D printable controller case with a transparent acrylic lid. Files in the repo [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/ControllerCase)
  - An enclosure is also under development. Files [here](https://github.com/fellesverkstedet/1810-CNC-Addons/tree/master/Enclosure)
  
@@ -57,8 +57,8 @@
  
   - Make more robust mount for Z homing switch *(can easily move upwards now and not trigger or give inconsistent triggering, screw triggering X limit switch can also shift)*
   - Add e-stop button
-  - Add on-off switch
-  - Adde safety wanting graphics and simple instructions on the machine
+  - Add on/off switch
+  - Add safety warning graphics and simple instructions on the machine
   - Finish enclosure, add handle and hinge
   - Tidy up wiring, shorten limit switch cable lengths
   - Add probing plate and wiring for bit length probing *(ala our shopbot setup)*
@@ -67,6 +67,7 @@
   - Adjust X and Y axes to be square
   - Adjust Z axis angle to be 90 deg to XY plane
   - Add dust collection solution?
+
 
 ### PCB milling links
 
